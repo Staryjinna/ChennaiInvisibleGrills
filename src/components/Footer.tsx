@@ -5,7 +5,7 @@ import { SITE, telHref, waHref } from "@/lib/site";
 export default function Footer() {
   const a = SITE.address;
   return (
-    <footer className="border-t border-white/10 bg-black/40 pb-24 text-white/75 lg:pb-0">
+    <footer className="bg-teal-dark pb-24 text-white/80 lg:pb-0">
       <div className="container-x grid gap-10 py-12 md:grid-cols-3">
         <div>
           <p className="font-heading text-xl font-extrabold text-white">{SITE.name}</p>

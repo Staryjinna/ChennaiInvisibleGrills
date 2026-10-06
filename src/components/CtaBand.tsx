@@ -9,20 +9,17 @@ export default function CtaBand({
     <section className="py-12 sm:py-16">
       <div className="container-x">
         <Reveal>
-          <div
-            className="card relative isolate overflow-hidden p-8 sm:p-12"
-            style={{ ["--accent" as string]: "rgba(255,200,87,.9)" }}
-          >
-            <div aria-hidden className="absolute -right-24 -top-24 -z-10 h-80 w-80 rounded-full bg-saffron/30 blur-3xl" />
-            <div aria-hidden className="absolute -bottom-32 -left-16 -z-10 h-80 w-80 rounded-full bg-cyan-500/20 blur-3xl" />
+          <div className="relative isolate overflow-hidden rounded-[28px] bg-gradient-to-br from-teal-dark via-teal to-[#118a96] p-8 text-white shadow-soft sm:p-12">
+            <div aria-hidden className="absolute inset-0 -z-10 opacity-25" style={{ background: "repeating-linear-gradient(90deg,rgba(255,255,255,.9) 0 1px,transparent 1px 26px)" }} />
+            <div aria-hidden className="absolute -right-20 -top-20 -z-10 h-72 w-72 animate-blob rounded-full bg-saffron/40 blur-3xl" />
             <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
               <div>
-                <h2 className="text-3xl font-extrabold text-white sm:text-4xl">{title}</h2>
-                <p className="mt-2 max-w-xl text-white/75">{text}</p>
+                <h2 className="text-3xl font-extrabold sm:text-4xl">{title}</h2>
+                <p className="mt-2 max-w-xl text-white/85">{text}</p>
               </div>
               <div className="flex flex-wrap gap-3">
                 <a href={telHref} className="btn-cta">Call {SITE.phoneDisplay}</a>
-                <a href={waHref()} className="btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+                <a href={waHref()} className="btn border-2 border-white/60 text-white hover:bg-white/10" target="_blank" rel="noopener">WhatsApp Us</a>
               </div>
             </div>
           </div>

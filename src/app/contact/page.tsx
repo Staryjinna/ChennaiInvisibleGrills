@@ -14,11 +14,11 @@ export default function ContactPage() {
     <section className="section">
       <div className="container-x grid gap-10 lg:grid-cols-2">
         <div>
-          <h1 className="text-4xl font-extrabold text-white">Contact Us for Invisible Grills &amp; Safety Nets in Chennai</h1>
+          <h1 className="text-4xl font-extrabold text-ink">Contact Us for Invisible Grills &amp; Safety Nets in Chennai</h1>
           <p className="mt-4 text-muted">Call, WhatsApp or fill the form. We&apos;ll call back to fix a free site visit at a time that suits you.</p>
           <ul className="mt-6 space-y-3 text-lg">
-            <li>📞 <a href={telHref} className="font-semibold text-gold underline">{SITE.phoneDisplay}</a></li>
-            <li>💬 WhatsApp: <a href={waHref()} target="_blank" rel="noopener" className="font-semibold text-gold underline">{SITE.phoneDisplay}</a></li>
+            <li>📞 <a href={telHref} className="font-semibold text-teal underline">{SITE.phoneDisplay}</a></li>
+            <li>💬 WhatsApp: <a href={waHref()} target="_blank" rel="noopener" className="font-semibold text-teal underline">{SITE.phoneDisplay}</a></li>
             <li>📍 Office: {a.street}, {a.locality}{a.postalCode ? ` ${a.postalCode}` : ""}</li>
             <li>🕗 {SITE.hours}</li>
             {SITE.email && <li>✉️ <a href={`mailto:${SITE.email}`} className="underline">{SITE.email}</a></li>}

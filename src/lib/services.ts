@@ -31,7 +31,7 @@ const call = `Call ${SITE.phoneDisplay}.`;
 export const SERVICES: Service[] = [
   {
     slug: "invisible-grills-chennai",
-    accent: "#ffc857",
+    accent: "#0f766e",
     path: "/invisible-grills-chennai/",
     name: "Invisible Grills",
     short: "Invisible Grills",
@@ -42,8 +42,8 @@ export const SERVICES: Service[] = [
     h1: "Invisible Grills Installation in Chennai",
     intro:
       "Invisible grills are high-tensile stainless steel cables fixed in tension across your balcony or window. From a distance they're barely noticeable, but up close they form a strong safety barrier for children, elders and pets. They're perfect for high-rise apartments where you want safety without caging in your view.",
-    image: img("photo-1712061644903-6ececf90c18e"),
-    imageAlt: "Apartment balcony with a railing and an open view of the city and river",
+    image: img("photo-1687960650778-35ab8f1a797e"),
+    imageAlt: "Bright apartment balcony with potted plants and an open view",
     benefitsTitle: "Why choose invisible grills",
     benefits: [
       "Keeps your balcony view and airflow open",
@@ -68,7 +68,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "safety-nets-chennai",
-    accent: "#4fd1e8",
+    accent: "#2563eb",
     path: "/safety-nets-chennai/",
     name: "Safety Nets",
     short: "Safety Nets",
@@ -79,8 +79,8 @@ export const SERVICES: Service[] = [
     h1: "Safety Nets Installation in Chennai",
     intro:
       "Safety nets are the most affordable way to childproof a balcony or stop pigeons from entering your home. Our nets are made from UV-stabilised HDPE/nylon and fixed tightly with hooks and anchors, so they stay strong through Chennai's sun and monsoon.",
-    image: img("photo-1764151604216-72059c4aa369"),
-    imageAlt: "Child standing at an apartment balcony",
+    image: img("photo-1712061644903-6ececf90c18e"),
+    imageAlt: "Balcony with a railing and an open view of trees and a river",
     benefitsTitle: "Benefits",
     benefits: ["Affordable", "Quick installation", "Nearly transparent from a distance", "UV-resistant", "Easy to remove or replace"],
     whereTitle: "Where we install",
@@ -95,7 +95,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "sports-nets-chennai",
-    accent: "#3ddc97",
+    accent: "#16a34a",
     path: "/sports-nets-chennai/",
     name: "Sports Nets",
     short: "Sports Nets",
@@ -121,7 +121,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "mosquito-mesh-chennai",
-    accent: "#a78bfa",
+    accent: "#7c3aed",
     path: "/mosquito-mesh-chennai/",
     name: "Mosquito Mesh",
     short: "Mosquito Mesh",
@@ -147,7 +147,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "cloth-hangers-chennai",
-    accent: "#fb7185",
+    accent: "#e11d48",
     path: "/cloth-hangers-chennai/",
     name: "Cloth Hangers",
     short: "Cloth Hangers",
@@ -173,7 +173,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "bird-spikes-chennai",
-    accent: "#fb923c",
+    accent: "#ea580c",
     path: "/bird-spikes-chennai/",
     name: "Bird Spikes",
     short: "Bird Spikes",

@@ -5,7 +5,7 @@ export default function FaqBlock({ faqs, title = "Frequently asked questions" }:
   return (
     <section className="section">
       <div className="container-x max-w-3xl">
-        <h2 className="text-3xl font-bold text-white">{title}</h2>
+        <h2 className="text-3xl font-bold text-ink">{title}</h2>
         <div className="mt-6 space-y-3">
           {faqs.map((f) => (
             <details key={f.q} className="card group p-5">

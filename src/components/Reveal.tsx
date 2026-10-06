@@ -1,13 +1,13 @@
 "use client";
 import { useEffect, useRef, type ReactNode } from "react";
 
-export default function Reveal({ children, className = "" }: { children: ReactNode; className?: string }) {
+export default function Reveal({ children, className = "", delay = 0 }: { children: ReactNode; className?: string; delay?: number }) {
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    if (el.getBoundingClientRect().top < window.innerHeight) return; // already on screen
+    if (el.getBoundingClientRect().top < window.innerHeight * 0.9) return; // already on screen
     el.classList.add("reveal-pre");
     const io = new IntersectionObserver(
       ([e]) => {
@@ -22,5 +22,5 @@ export default function Reveal({ children, className = "" }: { children: ReactNo
     io.observe(el);
     return () => io.disconnect();
   }, []);
-  return <div ref={ref} className={className}>{children}</div>;
+  return <div ref={ref} className={className} style={delay ? { transitionDelay: `${delay}ms` } : undefined}>{children}</div>;
 }
