@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal: #0f4c5c;
+  --color-teal-dark: #0a3641;
+  --color-teal-soft: #e6f0f2;
+  --color-saffron: #f4a300;
+  --color-saffron-dark: #d98f00;
+  --color-paper: #fafaf7;
+  --color-ink: #1f2328;
+  --color-muted: #5b636b;
+  --font-heading: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --radius-card: 16px;
+  --shadow-soft: 0 8px 30px rgba(15, 76, 92, 0.1);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4 { font-family: var(--font-heading); letter-spacing: -0.01em; }
+:focus-visible { outline: 3px solid var(--color-saffron); outline-offset: 2px; }
+
+/* Scroll fade-up (hidden state is only applied by JS, so no-JS visitors see everything) */
+.reveal-pre { opacity: 0; transform: translateY(18px); }
+.reveal-in { opacity: 1; transform: none; transition: opacity .6s ease, transform .6s ease; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal-pre { opacity: 1; transform: none; }
+  .reveal-in { transition: none; }
+}
+
+@utility container-x { @apply mx-auto w-full max-w-6xl px-4 sm:px-6; }
+@utility section { @apply py-14 sm:py-20; }
+@utility card { @apply rounded-[16px] bg-white shadow-soft; }
+@utility btn { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-semibold transition; }
+@utility btn-cta { @apply btn bg-saffron text-ink hover:bg-saffron-dark; }
+@utility btn-outline { @apply btn border-2 border-white/70 text-white hover:bg-white/10; }
+@utility btn-teal { @apply btn bg-teal text-white hover:bg-teal-dark; }
+@utility field { @apply w-full rounded-xl border border-black/15 bg-white px-4 py-3 text-base outline-none focus:border-teal focus:ring-2 focus:ring-teal/30; }
