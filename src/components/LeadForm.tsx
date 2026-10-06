@@ -30,12 +30,12 @@ export default function LeadForm({ defaultService = "", id = "quote" }: { defaul
     window.open(`https://wa.me/${SITE.whatsappNumber}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
   }
 
-  const err = (k: string) => errors[k] && <p role="alert" className="mt-1 text-sm text-red-700">{errors[k]}</p>;
+  const err = (k: string) => errors[k] && <p role="alert" className="mt-1 text-sm text-red-400">{errors[k]}</p>;
 
   return (
     <form id={id} onSubmit={onSubmit} noValidate className="card grid gap-4 p-5 sm:p-8 sm:grid-cols-2 scroll-mt-24">
       <div className="sm:col-span-2">
-        <h2 className="text-2xl font-bold text-teal">Get Free Site Visit</h2>
+        <h2 className="text-2xl font-bold text-white">Get Free Site Visit</h2>
         <p className="mt-1 text-muted">Fill this in and we&apos;ll open WhatsApp with your details, ready to send.</p>
       </div>
       <label className="block">

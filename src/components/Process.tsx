@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import Tilt from "./Tilt";
 
 const STEPS = [
   ["Call or WhatsApp us", "Tell us your area and what you need."],
@@ -9,16 +10,21 @@ const STEPS = [
 
 export default function Process({ title = "From call to installed in 4 simple steps" }: { title?: string }) {
   return (
-    <section className="section bg-teal-soft">
+    <section className="section">
       <div className="container-x">
-        <h2 className="text-3xl font-bold text-teal">{title}</h2>
-        <ol className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <h2 className="max-w-2xl text-3xl font-extrabold text-white sm:text-5xl">{title}</h2>
+        <ol className="relative mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div aria-hidden className="absolute left-0 right-0 top-[34px] hidden h-px bg-gradient-to-r from-transparent via-gold/60 to-transparent lg:block" />
           {STEPS.map(([t, d], i) => (
             <li key={t}>
-              <Reveal className="card h-full p-6">
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-saffron font-heading font-bold">{i + 1}</span>
-                <h3 className="mt-4 text-lg font-bold">{t}</h3>
-                <p className="mt-2 text-muted">{d}</p>
+              <Reveal className="h-full">
+                <Tilt className="h-full p-6 pt-9">
+                  <span className="absolute -top-0 left-6 flex h-[68px] w-[68px] -translate-y-1/2 items-center justify-center rounded-full bg-gradient-to-br from-[#ffd27a] to-[#f4a300] font-heading text-2xl font-extrabold text-[#1a1200] shadow-[0_0_40px_rgba(244,163,0,.55)]">
+                    {i + 1}
+                  </span>
+                  <h3 className="mt-6 text-lg font-bold text-white">{t}</h3>
+                  <p className="mt-2 text-muted">{d}</p>
+                </Tilt>
               </Reveal>
             </li>
           ))}

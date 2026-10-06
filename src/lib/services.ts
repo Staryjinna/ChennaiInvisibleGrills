@@ -14,6 +14,7 @@ export type Service = {
   metaDescription: string;
   h1: string;
   intro: string;
+  accent: string;
   image: string;
   imageAlt: string;
   benefitsTitle: string;
@@ -30,6 +31,7 @@ const call = `Call ${SITE.phoneDisplay}.`;
 export const SERVICES: Service[] = [
   {
     slug: "invisible-grills-chennai",
+    accent: "#ffc857",
     path: "/invisible-grills-chennai/",
     name: "Invisible Grills",
     short: "Invisible Grills",
@@ -66,6 +68,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "safety-nets-chennai",
+    accent: "#4fd1e8",
     path: "/safety-nets-chennai/",
     name: "Safety Nets",
     short: "Safety Nets",
@@ -92,6 +95,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "sports-nets-chennai",
+    accent: "#3ddc97",
     path: "/sports-nets-chennai/",
     name: "Sports Nets",
     short: "Sports Nets",
@@ -117,6 +121,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "mosquito-mesh-chennai",
+    accent: "#a78bfa",
     path: "/mosquito-mesh-chennai/",
     name: "Mosquito Mesh",
     short: "Mosquito Mesh",
@@ -142,6 +147,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "cloth-hangers-chennai",
+    accent: "#fb7185",
     path: "/cloth-hangers-chennai/",
     name: "Cloth Hangers",
     short: "Cloth Hangers",
@@ -167,6 +173,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: "bird-spikes-chennai",
+    accent: "#fb923c",
     path: "/bird-spikes-chennai/",
     name: "Bird Spikes",
     short: "Bird Spikes",

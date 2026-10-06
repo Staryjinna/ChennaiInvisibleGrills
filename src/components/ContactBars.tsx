@@ -10,8 +10,8 @@ export default function ContactBars() {
   return (
     <>
       {/* Mobile sticky bar */}
-      <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 gap-2 border-t border-black/10 bg-white p-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] lg:hidden">
-        <a href={telHref} className="btn-teal">📞 Call Now</a>
+      <div className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-2 gap-2 border-t border-white/10 bg-[#04121a]/85 p-2 backdrop-blur-xl pb-[max(0.5rem,env(safe-area-inset-bottom))] lg:hidden">
+        <a href={telHref} className="btn-teal">Call Now</a>
         <a href={waHref()} target="_blank" rel="noopener" className="btn bg-[#1faa59] text-white hover:bg-[#188a49]"><WaIcon /> WhatsApp</a>
       </div>
       {/* Desktop floating WhatsApp */}

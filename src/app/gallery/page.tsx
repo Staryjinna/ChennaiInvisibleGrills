@@ -16,7 +16,7 @@ export default function GalleryPage() {
     <>
       <section className="section">
         <div className="container-x">
-          <h1 className="text-4xl font-extrabold text-teal">Our work across Chennai</h1>
+          <h1 className="text-4xl font-extrabold text-white">Our work across Chennai</h1>
           <p className="mt-3 max-w-2xl text-muted">Real installations in apartments and houses around the city.</p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {GALLERY.length > 0
@@ -30,7 +30,7 @@ export default function GalleryPage() {
                 ))
               : SLOTS.map((label) => (
                   // PLACEHOLDER: replace by adding photos to /public/gallery/ and listing them in src/data/gallery.ts
-                  <div key={label} className="flex aspect-[4/3] flex-col items-center justify-center gap-1 rounded-[16px] border-2 border-dashed border-teal/40 bg-teal-soft text-center text-teal">
+                  <div key={label} className="flex aspect-[4/3] flex-col items-center justify-center gap-1 rounded-[22px] border-2 border-dashed border-white/20 bg-white/5 text-center text-white">
                     <span className="font-heading text-lg font-bold">YOUR PHOTO</span>
                     <span className="text-sm">{label}</span>
                   </div>

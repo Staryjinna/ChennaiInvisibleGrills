@@ -12,7 +12,7 @@ export default function PrivacyPage() {
   return (
     <section className="section">
       <div className="container-x max-w-3xl space-y-4">
-        <h1 className="text-4xl font-extrabold text-teal">Privacy Policy</h1>
+        <h1 className="text-4xl font-extrabold text-white">Privacy Policy</h1>
         <p className="text-muted">Last updated: October 2026</p>
         <h2 className="pt-4 text-2xl font-bold">What we collect</h2>
         <p>When you use our &ldquo;Get Free Site Visit&rdquo; form, the details you enter (name, mobile number, area, service, floor/tower and message) are placed into a WhatsApp message that <em>you</em> choose to send to us. This website has no server or database and does not store those details.</p>
